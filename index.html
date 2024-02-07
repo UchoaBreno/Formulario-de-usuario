@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <fieldset>
+
+                <legend><strong>Formulário de clientes</strong></legend>
+
+                <div class="inputBox">
+                    <input type="text"name="nome" id="nameID" class="inputUser" required>
+                    <label for="nome" class="labelInput"> Nome Completo</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text"name="email" id="emailID" class="inputUser" required>
+                    <label for="email" class="labelInput"> Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="number"name="telefone" id="telefoneID" class="inputUser" required>
+                    <label for="telefone" class="labelInput"> Número de Telefone</label>
+                </div>
+                <div class="inputBox">
+                    <input type="number"name="idade" id="idadeID" class="inputUser" required>
+                    <label for="idade" class="labelInput"> Idade</label>
+                </div>
+
+                <br>
+
+                <h3>Sexo:</h3>
+
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+    <br>            
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+<br>
+                <input type="radio" id="pnd" name="genero" value="pnd" required>
+                <label for="pnd">Prefiro não dizer</label>
+
+                <br>
+            <br><br>
+                <label for="data_nascimento"><strong>Data de Nascimento:</strong></label>
+                
+                <input type="date" id="data_nascimento" name="data_nascimento" value="" max="2005-12-30" required>
+                <label for="data_nascimento"></label>
+<br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+<br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+<br>
+                <div class="inputBox">
+                    <input type="text" name="pais" id="pais" class="inputUser" required>
+                    <label for="pais" class="labelInput">País</label>
+                </div>
+
+<br><br>
+
+                <input type="submit" class="enviar" id="submit" onclick="Enviar();" value="Enviar">
+            </fieldset>
+
+        </form>
+
+    </div>
+</body>
+</html>
